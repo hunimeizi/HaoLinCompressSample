@@ -1,0 +1,3 @@
+include ':haolinCompresslibrary'
+include ':app'
+rootProject.name = "HaoLinCompressSample"
