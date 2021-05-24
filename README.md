@@ -66,6 +66,11 @@ dependencies {
         CompressImageManager.build(this, compressConfig, photos, this).compress();
     }
 ```
+4.如果开启了混淆 需要添加一下代码
+```java
+-keep class com.haolin.image.compress.library.bean.**{*;}
+```
+
 #### 内嵌上传 Maven Central
 详细请看教程
 [JCenter已经提桶跑路，是时候学会上传到Maven Central了](https://mp.weixin.qq.com/s/CrfYc1KsugJKPy_0rDZ49Q)

@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.haolin.android.compresss.ample.utils.UriParseUtils
 import com.haolin.image.compress.library.CompressImageManager
 import com.haolin.image.compress.library.config.CompressConfig
+import com.haolin.image.compress.library.core.CompressPathUtils
 import com.haolin.image.compress.library.listener.CompressImage
 import com.haolin.image.compress.library.utils.CachePathUtils
 import com.haolin.image.compress.library.utils.CommonUtils
@@ -57,6 +58,7 @@ class MainActivity : AppCompatActivity() , CompressImage.CompressListener {
             .setCacheDir("") // 压缩后缓存图片路径，默认值：Constants.COMPRESS_CACHE
             .setShowCompressDialog(true) // 是否显示压缩进度条，默认值：false
             .create()
+
     }
 
     /**
